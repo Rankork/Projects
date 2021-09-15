@@ -43,15 +43,15 @@
             minNum = int1;
 
             for (var i = 0; i < intArray.length; i++) {
-                if (intArray[i] == 0) {
+                if (intArray[i] == 0) { //Checking if the array element is 0
 
                     int0 = int0 + 1; 
 
                 } else {
-
+                    //If the array is not 0. The program does nothing, as there is no need for any value to be updated. 
                 }
 
-                if (intArray[i] % 2 == 0) {
+                if (intArray[i] % 2 == 0) { //Checking if the array element is even or odd
 
                     evenNum = evenNum + 1; 
 
@@ -61,7 +61,7 @@
 
                 }
 
-                if (intArray[i] >= 0) {
+                if (intArray[i] >= 0) { //Checking if the array element is positive or negative
 
                     posNum = posNum + 1; 
 
@@ -71,13 +71,18 @@
 
                 }
 
-                if (intArray[i] > maxNum) {
-                maxNum = intArray[i]; }
+                if (intArray[i] > maxNum) { //Finding the maximum number of the array
+                    
+                    maxNum = intArray[i];
+                    
+                }
                 
 
-                if (intArray[i] < minNum) {
+                if (intArray[i] < minNum) { //Finding the minimum number of the array
 
-                minNum = intArray[i]; }
+                    minNum = intArray[i];
+                    
+                }
     
             }
 
@@ -98,6 +103,8 @@
     
     <form>
 
+           //The user input's 5 integers for the calculations to run with
+        
     Integer 1: 
 
     <input type="text" size = "25" id="num1" />
@@ -128,7 +135,7 @@
 
         </br> </br>
 
-    <input type="button" onClick="doCalculate()" Value="Calculate" />
+    <input type="button" onClick="doCalculate()" Value="Calculate" /> //When the button is clicked, the program runs, completing all the calculations
 
     </form>
 
