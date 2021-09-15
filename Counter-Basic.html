@@ -1,0 +1,70 @@
+<html>
+
+    <head>
+
+        <title> Basic Counter </title>
+
+        <script>
+
+            var counter = 0;
+            var animationOn = false;
+            var counterAnimation;
+
+            function updateCounter() {
+
+                    counter = counter + 1; 
+
+                counterUpdate = counter; 
+
+                var counterSpan = document.getElementById("counterHolder");
+                counterSpan.innerHTML = counterUpdate;
+
+            }
+
+            function startCounter() {
+
+                if (animationOn == false) {
+
+                    animationOn = true;
+
+                    counterAnimation = setInterval(updateCounter, 1000);
+
+                }
+
+            }
+
+            function stopCounter() {
+
+                if (animationOn == true) {
+
+                    animationOn = false; 
+
+                    clearInterval(counterAnimation);
+
+                }
+
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <button onClick="startCounter();">
+            Start Counter
+        </button>
+
+        <button onClick="stopCounter();">
+            Stop Counter
+        </button>
+
+            </br> </br>
+
+        <span style='font-size: 50px'>
+        <span id="counterHolder"> 0 </span>
+        </span>
+
+    </body>
+
+</html>
