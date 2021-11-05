@@ -1,2 +1,2 @@
 # Projects
-Projects I have created for practice/fun. In various programming languages and ranging from basic programs such as calculators to much more advanced programs. Such as Java OOP projects. 
+Personal projects, some of which are modified from uni work, and others made from scratch. 
